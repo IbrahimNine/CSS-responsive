@@ -1,0 +1,101 @@
+body {
+  background-image: url("https://templatemo.com/templates/templatemo_480_story/img/story-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+nav {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  min-width: 450px;
+  max-width: 450px;
+  padding: 0 15px;
+}
+nav header {
+  grid-column: 1/-1;
+  height: 148px;
+  font-size: 40px;
+}
+nav .box {
+  background-color: rgba(255, 255, 255, 0.158);
+  padding: 10px;
+}
+.navLink {
+  height: 200px;
+  font-size: 25.5px;
+}
+.box h1,
+.box h2,
+.boxleft h2 {
+  border: 1px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+.active h2,
+.box h2:hover {
+  border-color: black;
+  color: black;
+}
+nav .active,
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.466);
+}
+.boxleft {
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.493);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.boxleft h2 {
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+section {
+  flex: 1.5;
+  margin-top: 365px;
+  min-width: 500px;
+  max-width: 630px;
+}
+article {
+  background-color: white;
+  padding: 15px;
+}
+article p {
+  color: black;
+  font-size: 20px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 1000px) {
+  body {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+  }
+  section {
+    margin-top: 0;
+    margin-left: auto;
+    min-width: 400px;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding: 0 15px;
+    width: 460px;
+  }
+}
